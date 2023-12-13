@@ -7,4 +7,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  get "listings", to: "listings#index"
+  get "listings/:id", to: "listings#show"
+  get "listings/new", to: "listings#new"
+  post "listings", to: "listings#create"
+  get "listings/:id/edit", to: "listings#edit"
+  patch "listings/:id", to: "listings#update"
+  delete "listings/:id", to: "listings#destroy"
+
+
+
+
+
 end
